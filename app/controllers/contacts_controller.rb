@@ -1,4 +1,8 @@
 class ContactsController < ApplicationController
+  def index
+  end
+
+
   def new
      @contact = Contact.new #ビューにデータを渡す
      # モデルを作ってない状態だったのでエラーが起きていた。
