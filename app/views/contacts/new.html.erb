@@ -1,1 +1,15 @@
-<%= form_with(model: Blog.new) %>
+<%= form_with(model: Blog.new) do |form| %>
+  <div class="content_title">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="content_title">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="content_title">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
