@@ -1,5 +1,5 @@
 class Contact < ApplicationRecord
-  validates :name, presence: true
-  validates :email, presence: true
-  validates :content, presence: true
+  validates :name, length: { maximum: 140 }, presence: true
+  validates :email,  length: { maximum: 140 }, presence: true
+  validates :content,  length: { maximum: 140 }, presence: true
 end
